@@ -9,7 +9,7 @@ from pyrogram import Client
 from time import time
 
 
-#//import os import environ//
+import os
 
 from dotenv import load_dotenv
 load_dotenv()

@@ -24,7 +24,7 @@ ADMIN = ADMINS
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "Db Name")
 DATABASE_URL = os.getenv("DATABASE_URL", "Monfo url") 
 OWNER_ID =  int(os.environ.get("OWNER_ID", "Owner Id")) 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1061576483').split()]
+ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 #  Optionnal variables
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "Logs Channels Id")) 
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "Updates Channel User name Without @") # For Force Subscription

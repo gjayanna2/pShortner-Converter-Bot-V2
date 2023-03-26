@@ -8,7 +8,8 @@ import logging.config
 import sys
 from pyrogram import *
 from pyrogram.errors.exceptions.not_acceptable_406 import *
-from config import *
+from config import API_ID ,BOT_TOKEN ,OWNER_ID
+#  Optionnal variables
 from database import *
 from database.users import *
 from helpers import *
